@@ -18,3 +18,6 @@ const newVersion = calver.inc(
 pkg.dev_silverproject.store_version = newVersion;
 
 fs.writeFileSync("package.json", JSON.stringify(pkg, null, 2));
+
+console.log(newVersion);
+
