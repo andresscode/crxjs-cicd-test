@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "version": "node script/increment-store-version.js"
   },
   "dev_silverproject": {
     "store_version": "0.0.0.0"
