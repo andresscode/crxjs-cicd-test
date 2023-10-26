@@ -4,6 +4,7 @@ import { crx } from '@crxjs/vite-plugin'
 import manifest from './manifest.config.ts'
 
 // feat
+// change
 
 // https://vitejs.dev/config/
 export default defineConfig({
