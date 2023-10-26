@@ -35,6 +35,6 @@ jobs:
     - name: Create release
       run: |
         dt=$(date "+%F")
-        gh release create ${{ github.ref }} "./$pkgName#Package (zip)" --generate-notes --notes-start-tag "$dt"
+        gh release create ${{ github.ref }} "./$pkgName#Package (zip)" --generate-notes
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
