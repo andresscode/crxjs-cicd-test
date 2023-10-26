@@ -8,6 +8,7 @@ import manifest from './manifest.config.ts'
 // deprecate
 // remove
 // fix
+// security
 
 // https://vitejs.dev/config/
 export default defineConfig({
