@@ -35,6 +35,6 @@ jobs:
         dt=$(date "+%F")
         tag=${GITHUB_REF#refs/*/}
         title="$tag ($dt)"
-        gh release create ${{ github.ref }} './package.zip#Package (zip)' --generate-notes --title $title
+        gh release create ${{ github.ref }} './package.zip#Package (zip)' --generate-notes --title "$title"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
