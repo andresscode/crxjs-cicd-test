@@ -28,13 +28,12 @@ jobs:
     - name: Archive extension
       run: |
         cd dist
-        zip -r ../package.zip *
+        tag=${GITHUB_REF#refs/*/}
+        zip -r "../sp-chrome-ext-$tag.zip" *
         cd ..
     - name: Create release
       run: |
         dt=$(date "+%F")
-        tag=${GITHUB_REF#refs/*/}
-        title="$tag ($dt)"
-        gh release create ${{ github.ref }} './package.zip#Package (zip)' --generate-notes --title "$title"
+        gh release create ${{ github.ref }} './package.zip#Package (zip)' --generate-notes --notes-start-tag "$dt"
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
