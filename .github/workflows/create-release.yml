@@ -33,3 +33,6 @@ jobs:
     - name: Create release
       run: |
         echo ${{ github.ref }}
+        gh release create ${{ github.ref }} ./package.zip --generate-notes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
