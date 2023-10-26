@@ -1,7 +1,7 @@
 {
   "name": "crxjs-cicd-test",
   "private": true,
-  "version": "0.1.21",
+  "version": "0.1.22",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -10,7 +10,7 @@
     "postversion": "git push origin main --follow-tags"
   },
   "dev_silverproject": {
-    "store_version": "2023.10.26.21"
+    "store_version": "2023.10.26.22"
   },
   "dependencies": {
     "react": "^18.0.0",
