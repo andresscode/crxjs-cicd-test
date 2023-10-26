@@ -2,11 +2,19 @@ changelog:
   categories:
     - title: New Features 🎉
       labels:
-        - highlight
-    - title: Bug Fixes 🐞
-      labels:
-        - bugfix
-        - hotfix
+        - feat
     - title: Improvements 🛠️
       labels:
-        - enhancement
+        - change
+    - title: Deprecated ⚠️
+      labels:
+        - deprecate
+    - title: Removed ⛔️
+      labels:
+        - remove
+    - title: Bug Fixes 🐞
+      labels:
+        - fix
+    - title: Security 🚨
+      labels:
+        - security
