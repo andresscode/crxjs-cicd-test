@@ -30,3 +30,6 @@ jobs:
         cd dist
         zip -r ../package.zip *
         cd ..
+    - name: Create release
+      run: |
+        echo ${{ github.ref }}
