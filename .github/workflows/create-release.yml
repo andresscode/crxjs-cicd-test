@@ -31,6 +31,6 @@ jobs:
         zip -r ../package.zip *
         cd ..
     - name: Create release
-      run: gh release create ${{ github.ref }} './package.zip#Packed extension' --generate-notes
+      run: gh release create ${{ github.ref }} './package.zip#Extension package (zip)' --generate-notes
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
