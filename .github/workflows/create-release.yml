@@ -32,9 +32,9 @@ jobs:
         cd ..
     - name: Create release
       run: |
-        d=$(date '+%F')
-        t=${GITHUB_REF#refs/*/}
-        title='$t ($d)'
+        dt=$(date '+%F')
+        tag=${GITHUB_REF#refs/*/}
+        title='$tag ($dt)'
         gh release create ${{ github.ref }} './package.zip#Package (zip)' --generate-notes --title $title
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
