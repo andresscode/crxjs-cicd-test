@@ -2,11 +2,11 @@ changelog:
   categories:
     - title: New Features 🎉
       labels:
-        - enhancement
+        - highlight
     - title: Bug Fixes 🐞
       labels:
         - bugfix
         - hotfix
-    - title: Chores 🛠️
+    - title: Improvements 🛠️
       labels:
-        - chore
+        - enhancement
