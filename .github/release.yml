@@ -7,4 +7,6 @@ changelog:
       labels:
         - bugfix
         - hotfix
-
+    - title: Chores 🛠️
+      labels:
+        - chore
